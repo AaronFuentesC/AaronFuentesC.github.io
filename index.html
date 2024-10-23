@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro - Mi web </title>
+</head>
+<body>
+    <header>
+        <h1>Formulario de registro</h1>
+    </header>
+    <main>
+        <section>
+            <article>
+                <form action="./procesa.php" method="get">
+                    <fieldset>
+                        <legend>Datos Personales</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" size="20" maxlength="50" required>
+                    <br>
+                    <label for="apellido">Apellidos:</label>
+                    <input type="text" id="apellido" name="apellido" size="20" maxlength="50" required>
+                    <br>
+                    <label for="contraseña">Contrseña:</label>
+                    <input type="password" id="contraseña" name="contraseña" size="20" maxlength="8">
+                    <label for="Edad">Edad:</label>
+                    <input type="number" id="Edad" name="Edad" size="20" disabled>
+                    <br>
+                    <label for="sexo">Sexo:</label>
+                    <input type="radio" id="sexo" name="sexo" checked value="Hombre">Hombre
+                    <input type="radio" id="sexo" name="sexo" value="Mujer">Mujer
+                    </fieldset>
+
+                    <label for="Correo">Correo:</label>
+                    <input type="email" id="Correo" name="Correo" readonly>
+                    <br>
+                    <label for="Poblacion">Población</label>
+                    <select name="Pueblo" id="Poblacion">
+                        <option value="Alicante">Alicante</option>
+                        <option value="Madrid">Madrid</option>
+                        <option value="Sevilla" selected>Sevilla</option>
+                        <option value="Valencia">Valencia</option>
+                    </select>
+                    <br>
+                    <label for="Descripcion">Descripción</label>
+                    <textarea name="Descripcion" id="Descripcion" rows="4" cols="30"></textarea>
+                    <br>
+                    <input type="checkbox" name="PrimeraV" checked>Deseo recibir información sobre novedades y ofertas
+                    <br>
+                    <input type="checkbox" name="SegundaV">Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos
+                    <br>
+                    <label for="foto">Adjuntar Foto:</label>
+                    <input type="file" name="foto" id="foto" accept="image/*">
+                    <br><br>
+
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar datos">
+                </form>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
